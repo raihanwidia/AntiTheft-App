@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:padding="12dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".pocketMode"
+    tools:showIn="@layout/pocket_mode">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Protect your phone from the pick pocket whenever you are in public transport or crowd . By using the light sensor of your phone , the phone will buzzing when your phone is out from your pocket."
+        android:textColor="@color/colorPrimaryTextDefaultMaterialDark" />
+
+    <TextView
+        android:id="@+id/text_CountDPocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Will be activate in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimaryTextDefaultMaterialDark"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/count_DownPocket"
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/colorPrimaryTextDefaultMaterialDark"
+        android:textSize="200sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <ToggleButton
+        android:id="@+id/tooglePocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activate"
+        android:visibility="visible" />
+
+</LinearLayout>
